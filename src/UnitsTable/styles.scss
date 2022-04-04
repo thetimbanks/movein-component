@@ -1,0 +1,31 @@
+.UnitsTable {
+  .row {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 1em;
+  }
+
+  .row + .row {
+    border-top: none;
+  }
+
+  .unitInfo {
+    flex: 2;
+  }
+
+  .unitAmenities {
+    flex: 2;
+  }
+
+  .unitPricing {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .UnitsTable {
+    .row {
+      flex-direction: column;
+    }
+  }
+}
